@@ -6,6 +6,12 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.scs.ch/*"],
+      "css": ["styles.css"]
+    }
+  ],
   "permissions": [
     "tabs",
     "idle"
